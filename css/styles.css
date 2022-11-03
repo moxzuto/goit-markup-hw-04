@@ -122,9 +122,21 @@ h3 {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url("../images/hero-image.jpg");
-  background-position: ;
+}
+
+.overlay-hero {
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.4), 
+    rgba(0, 0, 0, 0.4)
+  ), url("../images/hero-image.jpg");
 }
 
 .hero-text {
@@ -207,6 +219,20 @@ h3 {
   margin-top: 10px;
   margin-bottom: 0;
 }
+
+/* просто практиковался потом изменю на правильно */
+
+.main-link-item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin-bottom: 43px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/antenna.jpg");
+}
+
 
 /* our team */
 
