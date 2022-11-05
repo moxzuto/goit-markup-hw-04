@@ -74,8 +74,16 @@ h3 {
   color: var(--accent-color);
 }
 
-.header-active-link:focus {
+.header-active-link:focus,
+.contacts-list-item:hover,
+.header-active-link:hover {
   color: var(--accent-color);
+}
+
+.contacts-list-item {
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .header-contacts-link {
@@ -115,6 +123,17 @@ h3 {
   border: 1px solid #eeeeee;
 }
 
+.header-icon {
+  fill: currentColor;
+  display: inline-block;
+  margin-right: 9px;
+  cursor: pointer;
+}
+
+.header-icon:hover {
+  fill: var(--accent-color);
+}
+
 /* Hero */
 
 .hero {
@@ -133,10 +152,11 @@ h3 {
   max-width: 1600px;
   height: 600px;
   background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.4), 
-    rgba(0, 0, 0, 0.4)
-  ), url("../images/hero-image.jpg");
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../images/hero-image.jpg");
 }
 
 .hero-text {
@@ -222,22 +242,55 @@ h3 {
 
 /* просто практиковался потом изменю на правильно */
 
-.main-link-item::before {
-  content: '';
-  display: block;
-  height: 120px;
-  margin-bottom: 43px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("../images/antenna.jpg");
+.icon-main {
+  display: inline-block;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 25px;
+  margin-bottom: 55px;
 }
-
 
 /* our team */
 
 .team-list-photo {
   display: flex;
+}
+
+.social-items,
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.social-items {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+
+.social-icons .social-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+}
+
+.social-icons .social-link:hover {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  fill: #ffffff;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social-items:last-child {
+  margin-right: 0px;
 }
 
 .team-portrait-list {
@@ -288,6 +341,50 @@ h3 {
   color: var(--second-color);
   text-align: center;
 }
+
+/* our clients */
+
+.clients-icons {
+  display: flex;
+}
+
+.logo-items {
+  width: 170px;
+  height: 92px;
+  margin-right: 30px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.clients-logo {
+  width: 106px;
+  height: 60px;
+  fill: #AFB1B8;
+}
+
+
+.clients-logo:hover, .logo-items:hover {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.logo-items:last-child {
+  margin-right: 0px;
+}
+
+
+.our-clients {
+  padding-bottom: 94px;
+}
+
+.clients-icons, .logo-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /*Footer*/
 
@@ -346,6 +443,34 @@ h3 {
 .footer-map:focus {
   color: var(--accent-color);
 }
+
+
+/* социа футера */
+
+.social-footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-left: 70px;
+}
+
+.footer-social-text {
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--background-color);
+width: 116px;
+height: 16px;
+padding-left: 156px;
+padding-bottom: 20px;
+}
+
+
+.social-icon-footer 
+
+
 
 /* PORTFOLIO */
 
@@ -434,4 +559,8 @@ h3 {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.footer-portfolio {
+  margin-top: 94px;
 }
