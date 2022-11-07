@@ -47,7 +47,7 @@ h3 {
 /* Хеадер */
 
 .header {
-  border-bottom: 1600px;
+  border-bottom: 100%;
 }
 
 .header-list-link {
@@ -203,11 +203,13 @@ h3 {
 .main-list-item {
   padding-bottom: 94px;
   padding-top: 94px;
+  background-color: #f5f4fa;
 }
 
 .main-list-link {
   display: flex;
   gap: 30px;
+  background-color: #f5f4fa;
 }
 
 .main-link-item {
@@ -353,7 +355,7 @@ h3 {
 .our-team-group {
   padding-bottom: 94px;
   padding-top: 94px;
-  background-color: var(--background-color);
+  background-color: #f5f4fa;
 }
 
 .team-labor {
@@ -397,6 +399,7 @@ h3 {
 
 .our-clients {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .clients-icons,
@@ -483,7 +486,7 @@ h3 {
 
 .footer-social-items,
 .footer-social-icons {
-  display: block;
+  display: flex;
 }
 
 .footer-social-icons .footer-social-link {
@@ -493,8 +496,9 @@ h3 {
   justify-content: center;
   align-items: center;
   fill: #ffffff;
-  background-color:rgba(255, 255, 255, 0.1);;
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  margin-top: 20px;
 }
 
 .footer-social-items {
@@ -611,7 +615,7 @@ h3 {
   margin-top: 94px;
 }
 
-.portfolio-images-list:hover {
+.portfolio-main-link-button:hover {
+  display: block;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
 }
-
