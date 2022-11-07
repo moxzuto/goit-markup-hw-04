@@ -120,7 +120,6 @@ h3 {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  border: 1px solid #eeeeee;
 }
 
 .header-icon {
@@ -263,8 +262,12 @@ h3 {
   margin-right: 100px;
   margin-top: 25px;
   margin-bottom: 55px;
-  background-color: #F5F4FA;
 }
+
+.icon-main-div {
+  background-color:#F5F4FA;;
+}
+
 
 .main-div-list {
   display: flex;
@@ -317,6 +320,7 @@ h3 {
 
 .team-portrait-list {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
 }
 
 .team-portrait-list:nth-child(2n) {
@@ -353,7 +357,7 @@ h3 {
 .our-team-group {
   padding-bottom: 94px;
   padding-top: 94px;
-  background-color: #f5f4fa;
+  background-color: #F5F4FA;
 }
 
 .team-labor {
@@ -414,6 +418,7 @@ h3 {
   padding-top: 60px;
   padding-bottom: 60px;
   justify-content: center;
+  display: flex;
 }
 
 .fotter-address {
@@ -428,10 +433,12 @@ h3 {
   line-height: 31px;
   letter-spacing: 0.03em;
   color: var(--background-color);
-
-  display: block;
-  margin-bottom: 20px;
 }
+
+.footer-address-list {
+  margin-top: 20px;
+}
+
 
 .footer-map {
   font-size: 14px;
@@ -445,8 +452,6 @@ h3 {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #ffffff99;
-
-  display: block;
 }
 
 .footer-contacts-link:not(:last-child) {
@@ -465,10 +470,19 @@ h3 {
   color: var(--accent-color);
 }
 
+.footer-address {
+  margin-left: 215px;
+  margin-right: 0px;
+}
+
+
+
 /* социа футера */
 .social-footer {
-  justify-content: flex-start;
   margin-top: 10px;
+  margin-right: 1000px;
+  margin-bottom: 100px;
+  justify-content: center;
 }
 
 .footer-social-text {
