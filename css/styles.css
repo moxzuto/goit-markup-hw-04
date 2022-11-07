@@ -203,18 +203,15 @@ h3 {
 .main-list-item {
   padding-bottom: 94px;
   padding-top: 94px;
-  background-color: #f5f4fa;
 }
 
 .main-list-link {
   display: flex;
   gap: 30px;
-  background-color: #f5f4fa;
 }
 
 .main-link-item {
   flex-basis: calc((100% - 90px) / 4);
-  background-color: #f5f4fa;
 }
 
 .team-section {
@@ -266,6 +263,7 @@ h3 {
   margin-right: 100px;
   margin-top: 25px;
   margin-bottom: 55px;
+  background-color: #F5F4FA;
 }
 
 .main-div-list {
